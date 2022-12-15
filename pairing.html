@@ -133,7 +133,7 @@
 
             var name = queryString.name;
 
-            var pairing = CryptoJS.AES.decrypt( queryString.pairing, queryString.key ).toString(CryptoJS.enc.Utf8);
+            var pairing = crypto-js.AES.decrypt( queryString.pairing, queryString.key ).toString(crypto-js.enc.Utf8);
             var pairingDefinition = pairing.match( /^([^(]+)(?: (\([^)]+\)))?$/ );
 
         </script>
