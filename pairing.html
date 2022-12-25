@@ -25,13 +25,6 @@
             }
 
             body {
-                background: url(./assets/snowww.png), url(./assets/santa.png), url(./assets/snwwwow.png), radial-gradient(#FB3B3B, #EF3D3D);
-                background-repeat: repeat, no-repeat, repeat, no-repeat;
-
-                animation-name: snow;
-                animation-duration: 5s;
-                animation-iteration-count: infinite;
-                animation-timing-function: linear;
                 font-family: 'Mountains of Christmas', cursive;
             }
 
@@ -139,7 +132,7 @@
 
     </head>
 
-    <body>
+    <body id="body">
             <script src="https://unpkg.com/magic-snowflakes/dist/snowflakes.min.js"></script>
             <script>
                 var sf = new Snowflakes({
@@ -160,6 +153,12 @@
                     <div class="pairing">
                         <div id="pairing-name"></div>
                         <div id="pairing-details"></div>
+                        <script type="text/javascript">
+        
+                            var randomSanta=["./assets/santa.png", "./assets/santa2.png"]
+                            
+                            document.getElementById("body").style.background='url(' + randomSanta[Math.floor(Math.random() * randomSanta.length)] + ') no-repeat right bottom';
+                            </script>
                         <script>
                             document.getElementById('pairing-name').innerText = pairingDefinition[1];
 
