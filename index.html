@@ -1,10 +1,3 @@
-<?php
-  $bg = array('assets/santa.png','assets/santa2.png'); // array of filenames
-
-  $i = rand(0, count($bg)-1); // generate random number size of the array
-  $selectedBg = "$bg[$i]"; // set variable equal to which random filename was chosen
-?>
-
 <!doctype html>
 <html>
 
@@ -33,7 +26,7 @@
             }
 
             body {
-                background-image: url(assets/<?php echo $selectedBg; ?>);
+
                 background-position: bottom right;
                 background-repeat: no-repeat;
 
@@ -155,7 +148,12 @@
             }
 
         </style>
-
+    <script type="text/javascript">
+        
+        var randomSanta=["assets/santa.png", "assets/santa2.png"]
+        
+        document.body.style.background='url('+Math.floor(Math.random()*randomSanta.length()+')');
+        </script>
     </head>
 
     <body>
