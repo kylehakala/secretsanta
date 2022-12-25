@@ -150,9 +150,9 @@
         </style>
     <script type="text/javascript">
         
-        var randomSanta=["assets/santa.png", "assets/santa2.png"]
+        var randomSanta=["./assets/santa.png", "./assets/santa2.png"]
         
-        document.getElementById("body").style.background='url('+Math.floor(Math.random()*randomSanta.length()+')');
+        document.getElementById("body").style.background-image='url(' + Math.floor(Math.random() * randomSanta.length()) + ')';
         </script>
     </head>
 
