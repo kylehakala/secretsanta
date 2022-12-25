@@ -135,7 +135,7 @@
 
     </head>
 
-    <body>
+    <body id="body">
             <script src="https://unpkg.com/magic-snowflakes/dist/snowflakes.min.js"></script>
             <script>
                 var sf = new Snowflakes({
@@ -145,6 +145,12 @@
                     maxSize: 40
                 });
             </script>
+            <script type="text/javascript">
+        
+                var randomSanta=["./assets/santa.png", "./assets/santa2.png"]
+                
+                document.getElementById("body").style.background='url(' + randomSanta[Math.floor(Math.random() * randomSanta.length)] + ') no-repeat right bottom';
+                </script>
         <div class="main">
 
             <div class="wrapper">
