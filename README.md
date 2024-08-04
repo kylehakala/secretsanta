@@ -2,6 +2,10 @@
 
 Check it live on [kylehakala.github.io/secretsanta/](http://kylehakala.github.io/secretsanta/).
 
+There isn't much to say here. 
+
+I modified the original implementation of this project by changing some of the graphics, adding multiple Santas, etc. 
+
 ## License (MIT)
 
 > **Copyright © 2015 Maël Nison**
